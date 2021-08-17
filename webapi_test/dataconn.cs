@@ -27,8 +27,9 @@ public class dataconn
        
         public void connectstring()
         {
-            string connectionstring = @"server=(local)\SQLExpress;Integrated Security=SSPI;database=northwind";
-            g_dbconn = new SqlConnection(connectionstring);
+        //string connectionstring = @"server=(local)\SQLExpress;Integrated Security=SSPI;database=northwind";
+        string connectionstring = @"server=(local)\SQLExpress;Integrated Security=False;User Id=andy;Password=andy640321;database=CYCH_PORTAL";
+        g_dbconn = new SqlConnection(connectionstring);
         }
 
         private void openconn()
